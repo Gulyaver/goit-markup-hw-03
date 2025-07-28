@@ -126,12 +126,13 @@ a {
 
 /* solution */
 
-
 .solution {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .solution-title {
+    max-width: 496px
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -142,6 +143,11 @@ a {
 }
 
 .solution-btn {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -164,7 +170,12 @@ a {
 
 /* advantage */
 
-.advantages-title {
+.advantages{
+    padding: 120px 0;
+    text-transform: capitalize;
+}
+
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -182,8 +193,13 @@ a {
 }
 
 
-.advantages {
-    text-transform: capitalize;
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantages-list-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages-title-txt {
@@ -192,6 +208,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .advantages-txt {
@@ -213,6 +230,8 @@ a {
 .team {
     background-color: #f4f4fd;
     text-transform: capitalize;
+    padding: 120px 0;
+    margin-bottom: 72px;
 }
 
 .team-title,
@@ -225,11 +244,18 @@ a {
     color: #2e2f42;
 }
 
+.team-list{
+    display: flex;
+    gap: 24px;
+}
+
 .team-list-item {
     background-color: #ffffff;
 }
 
-
+.team-hero{
+    margin-bottom: 8px;
+}
 .team-hero,
 .team-txt {
     text-align: center;
@@ -262,6 +288,19 @@ a {
 .portfolio {
     text-transform: capitalize;
     background-color: #ffffff;
+    padding-top: 120px;
+        padding-bottom: 120px;
+}
+
+.portfolio-title{
+    margin-bottom: 72px;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-txt-title {
@@ -278,6 +317,7 @@ a {
 
 .page-footer {
     background-color: #2e2f42;
+    padding: 100px 0
 }
 
 .footer-txt {
@@ -290,4 +330,9 @@ a {
 
 .footer-logo .logo-part {
     color: #f4f4fd;
+}
+
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
 }
