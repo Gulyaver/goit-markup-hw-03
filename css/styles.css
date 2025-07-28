@@ -185,6 +185,7 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    margin-bottom: 72px;
 }
 
 .advantages-container {
@@ -233,6 +234,10 @@ a {
     margin-bottom: 72px;
 }
 
+.team-title{
+    margin-bottom: 72px;
+}
+
 .team-title,
 .portfolio-title {
     font-weight: 700;
@@ -250,6 +255,11 @@ a {
 
 .team-list-item {
     background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.hero-name{
+    padding: 32px 0;
 }
 
 .team-hero{
